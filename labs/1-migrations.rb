@@ -16,10 +16,12 @@
 #   and Contact).  Follow the steps below for Salesperson, and then repeat
 #   for Activity.
 
-# 1. in terminal, generate a model and table for ______
-# rails generate model _____
+# 1. in terminal, generate a model and table for Salesperson and Activity
+#rails generate model Salesperson
+#rails generate model Activity
 
 # 2. open newly generated files
+
 
 # 3. in the db/migrate file, add relevant columns matching our domain model
 
