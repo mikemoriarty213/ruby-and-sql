@@ -19,7 +19,23 @@ Company.destroy_all
 puts "There are #{Company.all.count} companies"
 
 new_company = Company.new
-puts new_company
+puts new_company.inspect
+
+new_company["name"] = "Apple"
+new_company["city"] = "Cupertino"
+new_company["state"] = "CA"
+new_company["url"] = "https://www.apple.com/"
+puts new_company.inspect
+new_company.save
+
+new_company = Company.new
+new_company["name"] = "HelloFresh"
+new_company["city"] = "New York"
+new_company["state"] = "NY"
+puts new_company.inspect
+new_company.save
+
+puts "There are #{Company.all.count} companies"
 
 # 3. query companies table to find all row with California company
 
