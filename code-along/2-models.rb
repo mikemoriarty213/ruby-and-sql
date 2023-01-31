@@ -72,3 +72,15 @@ twitter.save
 puts twitter.inspect
 
 # 7. delete a row
+
+twitter = Company.find_by({"name" => "Twitter"})
+puts twitter.inspect
+twitter.destroy
+
+twitter = Company.find_by({"name" => "Twitter"})
+puts twitter.inspect
+#all gone now!
+
+puts "There are #{Company.all.count} companies"
+
+
